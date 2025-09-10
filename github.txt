@@ -1,0 +1,100 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+
+PS C:\Users\adelp\OneDrive\Plocha\jominek> git --version
+git version 2.51.0.windows.1
+PS C:\Users\adelp\OneDrive\Plocha\jominek> git clone https://github.com/Jominekfan1/Jominek.git
+Cloning into 'Jominek'...
+warning: You appear to have cloned an empty repository.
+PS C:\Users\adelp\OneDrive\Plocha\jominek> git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        a.pptx
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\adelp\OneDrive\Plocha\jominek> git add .
+PS C:\Users\adelp\OneDrive\Plocha\jominek> git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   a.pptx
+
+PS C:\Users\adelp\OneDrive\Plocha\jominek> git commit -m "jomi"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'adelp@new_PC.(none)')
+PS C:\Users\adelp\OneDrive\Plocha\jominek> git config --global user.email "adelpestsitsipes@seznam.cz"
+PS C:\Users\adelp\OneDrive\Plocha\jominek> git config --global user.name "Adéla Grmelová"
+PS C:\Users\adelp\OneDrive\Plocha\jominek> git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   a.pptx
+
+PS C:\Users\adelp\OneDrive\Plocha\jominek> git commit
+Aborting commit due to empty commit message.
+PS C:\Users\adelp\OneDrive\Plocha\jominek> git commit -m "jomi"
+[main (root-commit) 2f1af79] jomi
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 a.pptx
+PS C:\Users\adelp\OneDrive\Plocha\jominek> git status
+On branch main
+Your branch is based on 'origin/main', but the upstream is gone.
+  (use "git branch --unset-upstream" to fixup)
+
+nothing to commit, working tree clean
+PS C:\Users\adelp\OneDrive\Plocha\jominek> git branch --unset-upstream
+PS C:\Users\adelp\OneDrive\Plocha\jominek> git status
+On branch main
+nothing to commit, working tree clean
+PS C:\Users\adelp\OneDrive\Plocha\jominek> git remote -v
+origin  https://github.com/Jominekfan1/Jominek.git (fetch)
+origin  https://github.com/Jominekfan1/Jominek.git (push)
+PS C:\Users\adelp\OneDrive\Plocha\jominek> git push
+fatal: The current branch main has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin main
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+PS C:\Users\adelp\OneDrive\Plocha\jominek> git push -u origin main
+info: please complete authentication in your browser...
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 19.94 KiB | 19.94 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Jominekfan1/Jominek.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+PS C:\Users\adelp\OneDrive\Plocha\jominek> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+PS C:\Users\adelp\OneDrive\Plocha\jominek>
